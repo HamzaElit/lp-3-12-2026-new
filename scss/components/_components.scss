@@ -265,7 +265,7 @@ details {
 // ─── LP Button (Global Reusable) ────────────────────────
 // Usage:
 //   <a class="lp-btn" href="#">Label <span class="lp-btn__arrow"></span></a>
-//   Modifiers: .lp-btn--filled, .lp-btn--dark 
+//   Modifiers: .lp-btn--filled, .lp-btn--dark
 .lp-btn {
   position: relative;
   display: inline-flex;
@@ -305,13 +305,12 @@ details {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 3.8rem;
-    height: 3.8rem;
+    width: 3.3rem;
+    height: 3.3rem;
     flex-shrink: 0;
     border-radius: 50%;
-    background-color: var(--White);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 25.243'%3E%3Cpath d='M7.5,18h21M18,7.5,28.5,18,18,28.5' transform='translate(-6 -5.379)' fill='none' stroke='%234e83e6' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/svg%3E%0A");
-    background-size: 1.6rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33' height='33' viewBox='0 0 33 33'%3E%3Cpath id='Icon_akar-circle-chevron-right-fill' data-name='Icon akar-circle-chevron-right-fill' d='M18,1.5A16.5,16.5,0,1,0,34.5,18,16.5,16.5,0,0,0,18,1.5ZM14.689,13.061a1.5,1.5,0,1,1,2.121-2.121l6,6a1.5,1.5,0,0,1,0,2.121l-6,6a1.5,1.5,0,1,1-2.121-2.121L19.629,18Z' transform='translate(-1.5 -1.5)' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }

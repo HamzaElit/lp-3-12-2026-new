@@ -41,18 +41,12 @@
   &.em__oneColumn-01 {
     --slide-size: 100%; // Base mobile size
     --slide-size-sm: 100%;
-    --slide-size-lg: 80%;
+    --slide-size-lg: 100%;
   }
   &.em__twoColumns-02 {
     --slide-size: 100%; // Base mobile size
-    --slide-size-sm: 100%;
-    --slide-size-lg: 100%;
-
-    @include xl-up {
-      // --slide-size: calc(100% / 2);
-      // --slide-size-sm: calc(100% / 2);
-      --slide-size-lg: calc(100% / 2);
-    }
+    --slide-size-sm: 50%;
+    --slide-size-lg: 50%;
   }
 
   &.em__threeColumns-01 {

@@ -8,6 +8,7 @@
   --screen-xxl-min: 1700px;
 
   --Primary: #014799;
+  --Primary-dark: #003870;
   --Primary-2: #4e83e6;
   --Primary-3: #b3d5fc;
   --Primary-4: #026dd9;
@@ -34,7 +35,7 @@
   --subtitle-xl: 2.2rem;
 
   --h1-font-size: 4.2rem;
-  --h2-font-size: 4.6rem;
+  --h2-font-size: 4rem;
   --display-font-size: 10rem;
 
   --lp-block-gap__sm: 5.5rem;
@@ -77,8 +78,8 @@
     --btn-font: var(--lp-btn-font-lg);
   }
 
-  --h2_font-size-sm: 3rem;
-  --h2_font-size-md: 4.6rem;
+  --h2_font-size-sm: 3.6rem;
+  --h2_font-size-md: 4rem;
   --h2_font-size: var(--h2_font-size-sm);
   @include md-up {
     --h2_font-size: var(--h2_font-size-md);
