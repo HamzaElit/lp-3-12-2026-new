@@ -55,6 +55,27 @@
       }
     }
 
+    &-textcol {
+      @include lg-up {
+        width: 55%;
+        margin: 0 0 0 -5%;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 2;
+      }
+
+      .lp-footer__title.desktop-only {
+        @include lg-up {
+          margin-bottom: 3rem;
+          text-align: center;
+          font-size: 3.2rem;
+          margin-top: 0; // ensure spacing is clean above
+        }
+      }
+    }
+
     &-content {
       background-color: var(--White);
       border-radius: 10px;
@@ -65,12 +86,11 @@
       box-shadow: 0px 16px 19px rgba(0, 0, 0, 0.16);
 
       @include lg-up {
-        width: 55%;
-        margin: 0 0 0 -5%;
+        width: 100%;
+        margin: 0;
         padding: 5rem 6rem;
         border-radius: 20px;
         box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
-        flex-shrink: 0;
       }
 
       p:not(.lp-cta-subtitle) {

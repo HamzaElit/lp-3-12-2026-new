@@ -360,6 +360,54 @@
         </div>
       </section>
 
+      <section class="lp-video">
+        <div class="container">
+          <div class="lp-badge">TESTIMONIAL</div>
+
+          <div class="lp-video__header">
+            <h2 class="lp-video__title">Hear from our patients</h2>
+          </div>
+        </div>
+
+        <div
+          class="lp-video__wrapper"
+          onclick="
+            this.querySelector('.lp-video__player').innerHTML =
+              '<iframe src=\'https://player.vimeo.com/video/1118467266?autoplay=1\' frameborder=\'0\' allow=\'autoplay; fullscreen\' allowfullscreen></iframe>';
+            this.classList.add('is-playing');
+          "
+        >
+          <div class="lp-video__cover">
+            <img
+              src="assets/images/video-cover-mobile.jpg"
+              class="mobile-only"
+              alt="Video Cover"
+              loading="lazy"
+            />
+            <img
+              src="assets/images/video-cover.jpg"
+              class="desktop-only"
+              alt="Video Cover"
+              loading="lazy"
+            />
+          </div>
+          <button class="lp-video__play-btn" aria-label="Play video">
+            <img src="assets/images/play-icon.svg" alt="Play" />
+          </button>
+          <div class="lp-video__player"></div>
+        </div>
+
+        <div class="container">
+          <div class="lp-cta-wrapper lp-video__cta">
+            <a href="#" class="lp-btn">
+              Book Free Hair Analysis
+              <span class="lp-btn__arrow"></span>
+            </a>
+            <p class="lp-cta-subtitle">Free and non-binding</p>
+          </div>
+        </div>
+      </section>
+
       <section class="lp-before-after" id="before_after">
         <div class="container">
           <div class="lp-before-after__header">
@@ -1776,32 +1824,28 @@
     </main>
     <footer class="lp-footer">
       <div class="container">
-        <h2 class="lp-footer__title">
-          <span class="desktop-only">TAKE THE STEP</span>
-          <span class="mobile-only">Take the step</span>
-        </h2>
+        <h2 class="lp-footer__title mobile-only">Take the step</h2>
 
         <div class="lp-footer__card">
           <div class="lp-footer__card-image">
-            <img
-              src="assets/images/footer.jpg"
-              alt="Elithair consultation"
-              loading="lazy"
-            />
+            <img src="assets/images/footer.jpg" alt="Elithair consultation" />
           </div>
-          <div class="lp-footer__card-content">
-            <p>
-              Every day you wait often means further hair loss. With Elithair,
-              you have the chance to actively promote hair growth and regain
-              your self-confidence.
-            </p>
+          <div class="lp-footer__card-textcol">
+            <h2 class="lp-footer__title desktop-only">TAKE THE STEP</h2>
+            <div class="lp-footer__card-content">
+              <p>
+                Every day you wait often means further hair loss. With Elithair,
+                you have the chance to actively promote hair growth and regain
+                your self-confidence.
+              </p>
 
-            <div class="lp-cta-wrapper">
-              <a href="#" class="lp-btn">
-                Book Free Consultation
-                <span class="lp-btn__arrow"></span>
-              </a>
-              <p class="lp-cta-subtitle">Free and non-binding</p>
+              <div class="lp-cta-wrapper">
+                <a href="#" class="lp-btn">
+                  Get a free consultation
+                  <span class="lp-btn__arrow"></span>
+                </a>
+                <p class="lp-cta-subtitle">Free and non-binding</p>
+              </div>
             </div>
           </div>
         </div>
