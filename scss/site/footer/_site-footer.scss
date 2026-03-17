@@ -27,6 +27,7 @@
     max-width: 512px;
     margin: 0 auto 6rem;
     position: relative;
+    justify-content: center;
 
     @include lg-up {
       max-width: 1000px;
@@ -43,7 +44,7 @@
       margin: 0 auto;
 
       @include lg-up {
-        width: 50%;
+        width: 40%;
         margin: 0;
         flex-shrink: 0;
       }
@@ -70,7 +71,7 @@
         @include lg-up {
           margin-bottom: 3rem;
           text-align: center;
-          font-size: 3.2rem;
+          font-size: 3rem;
           margin-top: 0; // ensure spacing is clean above
         }
       }
@@ -109,14 +110,14 @@
 
       .lp-cta-wrapper {
         margin-top: 1rem;
-        
+
         @include lg-up {
           text-align: center;
           display: flex;
           flex-direction: column;
           align-items: center;
         }
-        
+
         .lp-cta-subtitle {
           color: var(--Black);
           font-size: 1.5rem;
