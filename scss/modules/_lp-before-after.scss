@@ -3,6 +3,7 @@
 .lp-before-after {
   padding: var(--block-gap) 0;
   overflow: hidden;
+  background: linear-gradient(#0254b3 0%, #012f63 100%);
 
   // ── Header ───────────────────────────────────────────────
   &__header {
@@ -10,7 +11,7 @@
     margin-bottom: 2rem;
 
     @include lg-up {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
       margin-left: auto;
       margin-right: auto;
     }
@@ -22,7 +23,7 @@
     font-weight: 900;
     font-size: 3rem;
     line-height: 1.15;
-    color: var(--Black);
+    color: var(--White);
     margin: 0 0 1rem;
 
     @include lg-up {
@@ -32,39 +33,59 @@
     }
 
     .highlight {
-      color: var(--Primary);
+      color: var(--White);
     }
   }
 
   &__subtitle {
+    font-weight: 400;
+    font-size: 2.6rem;
+    margin: 0;
+    color: var(--White);
     @include lg-up {
       text-align: center;
+      font-size: 3.3rem;
     }
-    font-weight: 400;
-    font-size: 2rem;
-    margin: 0;
   }
 
   // ── Slider Items ─────────────────────────────────────────
   &__slider {
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 
     @include lg-up {
-      margin-bottom: 5.5rem;
+      margin-bottom: 7rem;
+    }
+  }
+
+
+  .embla__dot {
+    background-color: transparent;
+    &--selected {
+      background-color: var(--Primary-3);
+    }
+  }
+
+  .lp-cta-wrapper {
+    margin-top: 4rem;
+    @include lg-up {
+      margin-top: 5rem;
+    }
+
+    .lp-cta-subtitle {
+      color: var(--White);
     }
   }
 
   &__card {
     --border-radius: 1rem;
-    border-radius: var(--border-radius);
     overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--White);
   }
 
   &__img {
-    border-radius: var(--border-radius);
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -72,18 +93,23 @@
   }
 
   &__caption {
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--Primary);
     text-align: center;
-    padding: 1rem 1rem 0;
+    padding: 1.5rem 1rem 1.5rem;
     margin: 0;
     flex-grow: 1;
     display: flex;
-    align-items: flex-start; // Align text properly right beneath the pair without being vertically centered
+    align-items: flex-start;
     justify-content: center;
 
+    @include lg-up {
+      font-size: 2.1rem;
+    }
+
     strong {
-      font-weight: 700;
+      font-weight: 800;
       color: var(--Primary);
       margin-right: 0.4rem;
     }
@@ -92,26 +118,9 @@
   .embla__container {
     .embla__slide {
       position: relative;
-      &::after {
-        display: none;
-        content: "";
-        position: absolute;
-        top: calc(50%);
-        right: -20px;
-        z-index: 1;
-        @include lg-up {
-          right: -40px;
-        }
-        transform: translateY(calc(-50% - 20px));
-        width: 1px;
-        height: 60%;
-        background-color: #8a8a8a;
-        @include md-up {
-          display: block;
-        }
-      }
     }
   }
+
   // ── CTA Block ────────────────────────────────────────────
   &__cta {
     display: flex;
@@ -191,6 +200,7 @@
     font-family: var(--font-text);
     font-size: 1.8rem;
     margin: 0;
+    color: var(--Black);
 
     @include lg-up {
       font-size: 2rem;
